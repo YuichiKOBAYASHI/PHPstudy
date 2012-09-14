@@ -10,15 +10,30 @@ $kobayashi = null;
 echo "斎藤は{$saito}を出しました";
 echo "小林は{$kobayashi}を出しました";
 
+//関数を呼び出し
+$res =judge($saito,$kobayashi);
+
+echo "勝者は、{$res}です";
+
+
+
+
 /**
  * @abstract ふたりの手を判断しどちらが勝ったか返す
  * @param string $hand1
  * @param string $hand2
- * @return int 1:１が勝ち、2:２が勝ち、0:引き分け
+ * @return string 勝った人の名前
  */
 function judge($hand1,$hand2){
-    $judge = null;
-    return $judge;
+    
+    $winname = null;
+    
+    //条件分岐で勝ち負けを判断
+    
+    
+    
+    
+    return $winname;
 }
 
 ?>
