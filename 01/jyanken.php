@@ -1,19 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>02jyanken</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+</html>
 <?php
 
 /*
  * じゃんけんをしてその結果を出力する関数を作成
  */
 
-$saito = null;
-$kobayashi = null;
+//変数初期化
+$saito      = null;
+$kobayashi  = null;
 
-echo "斎藤は{$saito}を出しました";
-echo "小林は{$kobayashi}を出しました";
+//変数セット
+$saito       = "goo";
+$kobayashi   = "choki";
+
+
+echo "斎藤は{$saito}を出しました<br>";
+echo "小林は{$kobayashi}を出しました<br>";
 
 //関数を呼び出し
 $res =judge($saito,$kobayashi);
 
-echo "勝者は、{$res}です";
+echo "勝者は、{$res}です<br>";
 
 
 
